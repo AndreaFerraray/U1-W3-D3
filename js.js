@@ -17,7 +17,7 @@ const conferma = confirm("confermi?");
 if (conferma) {
   const container = document.querySelector(".registrato");
   const li = document.createElement("li");
-  li.innerText = `${name.nome}`;
+  li.innerHTML = `${name.nome}`;
   `${name.password}`;
   container.appendChild(li);
   console.log("okay");
