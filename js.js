@@ -15,10 +15,11 @@ const inserirenome = (submitEvents) => {
 console.log(name);
 const conferma = confirm("confermi?");
 if (conferma) {
-  const conferma = "GRAZIE DI ESSERTI REGISTRATO!";
   const container = document.querySelector(".registrato");
   const li = document.createElement("li");
   li.innerText = `${name.nome}`;
   `${name.password}`;
   container.appendChild(li);
+  console.log("okay");
+  li.innerText = "GRAZIE DI ESSERTI REGISTRATO!";
 }
